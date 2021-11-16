@@ -15,6 +15,7 @@
 		0735C75126F9DB41006CCC61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0735C74F26F9DB41006CCC61 /* LaunchScreen.storyboard */; };
 		07DCD4F1270324BD002398B0 /* 45088086-940Smiley_Harmonie_Thinkstock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07DCD4F0270324BD002398B0 /* 45088086-940Smiley_Harmonie_Thinkstock.jpg */; };
 		07F2E3CC27158A9000B06E10 /* GameLogik.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F2E3CB27158A9000B06E10 /* GameLogik.swift */; };
+		86D0274C2743C6470082C509 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D0274B2743C6470082C509 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		0735C75226F9DB41006CCC61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07DCD4F0270324BD002398B0 /* 45088086-940Smiley_Harmonie_Thinkstock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "45088086-940Smiley_Harmonie_Thinkstock.jpg"; sourceTree = "<group>"; };
 		07F2E3CB27158A9000B06E10 /* GameLogik.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLogik.swift; sourceTree = "<group>"; };
+		86D0274B2743C6470082C509 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				0735C74626F9DB3F006CCC61 /* SceneDelegate.swift */,
 				0735C74826F9DB3F006CCC61 /* ViewController.swift */,
 				0735C74A26F9DB3F006CCC61 /* Main.storyboard */,
+				86D0274B2743C6470082C509 /* ResultViewController.swift */,
 				0735C74D26F9DB41006CCC61 /* Assets.xcassets */,
 				0735C74F26F9DB41006CCC61 /* LaunchScreen.storyboard */,
 				0735C75226F9DB41006CCC61 /* Info.plist */,
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86D0274C2743C6470082C509 /* ResultViewController.swift in Sources */,
 				0735C74926F9DB3F006CCC61 /* ViewController.swift in Sources */,
 				0735C74526F9DB3F006CCC61 /* AppDelegate.swift in Sources */,
 				0735C74726F9DB3F006CCC61 /* SceneDelegate.swift in Sources */,

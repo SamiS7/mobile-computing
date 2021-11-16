@@ -99,10 +99,10 @@
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="88.392857142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="ZPD-yg-IRT">
             <objects>
-                <viewController id="qSo-LI-EWt" sceneMemberID="viewController">
+                <viewController id="qSo-LI-EWt" customClass="ResultViewController" customModule="Hello_world" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PtB-Oj-Wz6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

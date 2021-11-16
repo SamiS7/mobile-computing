@@ -76,8 +76,12 @@ class ViewController: UIViewController {
         	
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("prepare")
+        let resultViewController = segue.destination as? ResultViewController
+        resultViewController?.gamelogik = gameLogik
+    }
     
-    
-   
+
 }
 
