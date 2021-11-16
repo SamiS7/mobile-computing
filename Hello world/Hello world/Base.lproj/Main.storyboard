@@ -37,6 +37,7 @@
                                 <state key="normal" title="Guess"/>
                                 <connections>
                                     <action selector="ontouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Epo-aO-6SA"/>
+                                    <segue destination="qSo-LI-EWt" kind="show" id="Xzl-P6-253"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gdr-mN-s8d">
@@ -66,9 +67,6 @@
                                     <action selector="editingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="brA-5N-6oP"/>
                                 </connections>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="45088086-940Smiley_Harmonie_Thinkstock.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="t2M-A7-QWs">
-                                <rect key="frame" x="155" y="-1" width="104" height="898"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -77,24 +75,20 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MJQ-OW-ZmS" secondAttribute="trailing" constant="20" id="6e2-NK-ti0"/>
                             <constraint firstItem="w1u-nf-wdS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="BHc-6n-OTA"/>
                             <constraint firstItem="w1u-nf-wdS" firstAttribute="top" secondItem="MJQ-OW-ZmS" secondAttribute="bottom" constant="18" id="EBJ-h9-1h4"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="t2M-A7-QWs" secondAttribute="trailing" constant="155" id="HDd-vc-k4W"/>
                             <constraint firstItem="Gdr-mN-s8d" firstAttribute="top" secondItem="uNh-e5-kRM" secondAttribute="bottom" constant="22.5" id="Uza-kg-79M"/>
                             <constraint firstItem="Gdr-mN-s8d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vyy-XD-6Xq"/>
                             <constraint firstItem="MJQ-OW-ZmS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="b5A-LK-pm3"/>
                             <constraint firstItem="WsM-Pw-DKh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="2" id="cJm-5N-xk6"/>
-                            <constraint firstItem="t2M-A7-QWs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h1v-Pe-Xfq"/>
                             <constraint firstItem="MJQ-OW-ZmS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hUY-Cb-xsE"/>
                             <constraint firstItem="uNh-e5-kRM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="m3c-C9-b2t"/>
                             <constraint firstItem="uNh-e5-kRM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oS2-ei-ckh"/>
                             <constraint firstItem="w1u-nf-wdS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="rT5-Y2-say"/>
-                            <constraint firstItem="t2M-A7-QWs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rxE-XH-hPW"/>
                             <constraint firstItem="WsM-Pw-DKh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-70" id="sqv-tE-HCK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w1u-nf-wdS" secondAttribute="trailing" constant="20" id="tHP-Zm-eoO"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Guessing Game" id="lN5-6M-P11"/>
                     <connections>
-                        <outlet property="emoji" destination="t2M-A7-QWs" id="tQj-bu-ndY"/>
                         <outlet property="guessmeButton" destination="uNh-e5-kRM" id="3VB-eB-cqS"/>
                         <outlet property="message" destination="Gdr-mN-s8d" id="N4e-ay-6RE"/>
                         <outlet property="texfield" destination="WsM-Pw-DKh" id="qR9-5B-KjY"/>
@@ -122,8 +116,10 @@
             <point key="canvasLocation" x="926" y="96"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Xzl-P6-253"/>
+    </inferredMetricsTieBreakers>
     <resources>
-        <image name="45088086-940Smiley_Harmonie_Thinkstock.jpg" width="703.5" height="673.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
