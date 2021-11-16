@@ -13,8 +13,11 @@ class ResultViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
+        if let unwrapped = gamelogik {
+            print("\(unwrapped.numberOfGuesses)")
+        }else {
+            print("Missing noofGuesses")
+        }
     }
     
 
