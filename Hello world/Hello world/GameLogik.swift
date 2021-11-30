@@ -36,7 +36,7 @@ class GameLogik {
             let optionalNumber = Int(strg)
             
             if let guess =  optionalNumber  {
-                    isValid = guess > 1 && guess < 99
+                    isValid = guess >= 1 && guess <= 99
             }
         }
         

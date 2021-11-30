@@ -80,7 +80,7 @@ class ViewController: UIViewController {
         print("prepare")
         let resultViewController = segue.destination as? ResultViewController
         resultViewController?.gamelogik = gameLogik
-        resultViewController?.numberofGuesses = gameLogik.numberOfGuesses
+        resultViewController?.gamelogik?.numberOfGuesses = gameLogik.numberOfGuesses
     }
     
 
