@@ -31,13 +31,9 @@ class ViewController: UIViewController {
     }
     
     func checkCount() -> Bool {
-        if (lastName.text!.count >= 2 && plz.text!.count == 4 && place.text!.count >= 2)  {
-            saveButton.isEnabled = true
-            return true
-            //shouldPerformSegue(withIdentifier: <#T##String#>, sender: <#T##Any?#>)
-        }
-        saveButton.isEnabled = false
-        return false
+        let check = (lastName.text!.count >= 2 && plz.text!.count == 4 && place.text!.count >= 2)
+        saveButton.isEnabled = check
+        return check
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
