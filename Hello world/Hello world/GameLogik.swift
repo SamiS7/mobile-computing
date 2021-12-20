@@ -3,6 +3,7 @@ class GameLogik {
     
     var numberToGuess = 0
     var numberOfGuesses = 0
+    var guessArr = [Int]()
     
     
     func startNewGame() {
@@ -12,8 +13,7 @@ class GameLogik {
         
     }
     
-    func evaluate(guess: Int) -> Int {
-        
+    func evaluate(guess: Int) -> Int {        
         let diff = guess - numberToGuess
         let result = diff.signum()
         print("number to guess: \(numberToGuess),result: \(result), guess: \(guess)")

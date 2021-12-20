@@ -51,6 +51,7 @@ class ViewController: UIViewController {
         var outputText: String!
         
         if let guess = texfield.text {
+            gameLogik.guessArr.append(Int(guess)!)
             message.text = "\(guess)"
             let guessResult = gameLogik.evaluate(string: guess)
  
@@ -76,11 +77,9 @@ class ViewController: UIViewController {
         	
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print("prepare")
-        let resultViewController = segue.destination as? ResultViewController
-        resultViewController?.gamelogik = gameLogik
-        resultViewController?.gamelogik?.numberOfGuesses = gameLogik.numberOfGuesses
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {        
+        let tableViewController = segue.destination as? TableViewController
+        tableViewController?.gameLogik = gameLogik
     }
     
 
